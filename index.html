@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TheI1</title>
+    <style>
+        @keyframes splash {
+            from {
+                scale: 100%;
+            }
+            to {
+                scale: 60%;
+            }
+        }
+    </style>
+    </head>
+    <body>
+        <strong id="splash" style="width: 40%;animation: 1s infinite alternate splash;text-align:center;position:absolute;rotate:30deg;right:-3%; top:12%;",></strong>
+
+        <script>
+            function randomSay() {
+                const pool = [
+                    "Satisfactory is a cool game!",
+                    "I swear I never wrote this message!", "Check out Uxn and Varvara",
+                    "From a place just south of Antarctica", "NP incomplete",
+                    "You never get a first chance to leave a second impression.",
+                    "Destroy this message immediately after reading!",
+                    "My favorite compound is oxidane.", "LEGALIZE DIHIDROGEN MONOXIDE!",
+                    "You have seen this message before!",
+                    "Sebastian Lague has a cool YouTube channel!",
+                    "Hydrohydroxic acid isn't that deadly!", "Arch BTW",
+                    "baba is you is game is good", "Made with hydrogen hydroxide!",
+                    "class Java extends ProgrammingLanguage implements WayTooMuchText",
+                    "CC:Tweaked is a cool Minecraft mod", "*((int*)0) = 1",
+                    "was gonna tell you a joke but I guess you've already heard it.",
+                    "If you don't have enough grandmothers, play Cookie Clicker!",
+                    "Always remember to smell and stop the roses!",
+                    "Roses are rose Violets are violet!",
+                    "I wonder what would make this question rhetorical?",
+                    "Ferb, I know what we're gonna do today!",
+                    "What does a website do? It sites webs!",
+                    "A millimeter goes into a gram 23 times!",
+                    "Every even prime number over 5 is a multiple of two!",
+                    "The factors of 67 are 5, 5, and 2.68!",
+                    "Tastes like microwaved bycicle tire!",
+                    "The cake is alive!", "This message is right three times a day!",
+                    "This message is technically correct!",
+                    "All time travellers, come back yesterday!",
+                    "Everybody knows who Griffpatch is.",
+                    "There is an exactly 100% chance of you getting this message!",
+                    ""
+                ]
+
+                return pool[Math.floor(Math.random() * pool.length)];
+            }
+
+            document.getElementById("splash").innerText = randomSay();
+        </script>
+    </body>
+</html>
